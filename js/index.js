@@ -4,7 +4,6 @@ $(document).ready(function(){
 	$('#dp').css('height', $(window).height());
 
 	$('#hello-text').css('top', $(window).height() / 1.8);
-	// $('#hello-text').css('left', $(window).width() / 2);
 	var startedTyping = false;
 
 	var maxScroll = 200;//$('#dp').height() - $(window).height();
@@ -23,10 +22,8 @@ $(document).ready(function(){
 
 function simulateTyping()
 {
-
 	$("#hello-text").typed({
-		strings: ["Hello I'm Rakesh.."],
-		typeSpeed: 0.5
+		strings: ["Hello.. I'm Rakesh.."],
+		typeSpeed: 0.4
 	});
-
 }
