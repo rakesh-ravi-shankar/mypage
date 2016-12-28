@@ -13,10 +13,12 @@ $(document).ready(function(){
 		if (!startedTyping && newTextOpacity > 0.6) {
 			simulateTyping();
 			startedTyping = true;
+			animateWebIcon();
+			animateGameIcon();
 		}
 		$('#hello-text').css('opacity', newTextOpacity);
 	});
-	
+
 });
 
 
@@ -24,6 +26,51 @@ function simulateTyping()
 {
 	$("#hello-text").typed({
 		strings: ["Hello.. I'm Rakesh.."],
-		typeSpeed: 0.4
+		typeSpeed: 0.4,
+		showCursor: false
 	});
 }
+
+
+function animateWebIcon()
+{
+	$('#web-dev-icon').fadeTo("slow", 1);
+	$('#web-dev-icon').animate({
+		"margin-left": "10%",
+		"margin-right": "10%"
+	}, 1000, function(){
+		$(this).css("display", "inline");
+		$(this).closest('div').attr("class", "col-md-4");
+		$(this).closest('div').after("<div class='col-md-8 well' id='web-dev-content'></div>");
+		$("#web-dev-content").css({"display": "inline", "background": "#323232"});
+		$("#web-dev-content").load("../content/web-dev-content.html");
+
+	});
+}
+
+function animateGameIcon()
+{
+	$('#game-dev-icon').fadeTo("slow", 1);
+	$('#game-dev-icon').animate({
+		"margin-left": "10%",
+		"margin-right": "10%"
+	}, 1000, function(){
+		$(this).css("display", "inline");
+		$(this).closest('div').attr("class", "col-md-4");
+		$(this).closest('div').after("<div class='col-md-8 well' id='game-dev-content'></div>");
+		$("#game-dev-content").css({"display": "inline", "background": "#323232"});
+
+	});
+}
+
+
+
+
+
+
+
+
+
+
+
+

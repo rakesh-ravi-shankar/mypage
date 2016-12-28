@@ -17,12 +17,12 @@
   	<nav class="navbar navbar-inverse navbar-fixed-top" style="margin-bottom: 0px;background: rgba(0,0,0,0.5);border:rgba(0,0,0,0.4);">
       <!-- <div class="container"> -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+<!--           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button>
+          </button> -->
           <a class="navbar-brand" href="#"><b>Rakesh Ravi Shankar</b></a>
         </div>
         <!-- <div id="navbar" class="collapse navbar-collapse">
@@ -35,40 +35,29 @@
       <!-- </div> -->
     </nav>
 
-    <div class="row" style="text-align: center;">
+    <div class="row" style="text-align: center; margin-left: 0px; margin-right: 0px;">
     	<span id="hello-text"></span>
     	<img src="resources/beach-dp.jpg" id="dp">
     </div>
 
-  	<div class="row talent-type" id="talent-display">
-  		<div class="container">
-		  	<div class="well col-md-5">
-		  		<img src="resources/mac.png">
-		  		<h3>Web Development</h3>
-		  		<p>
-		  			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pretium urna neque, a bibendum dui sagittis vehicula. Nam vitae neque tincidunt, rhoncus dui sed, imperdiet magna. Etiam eu turpis porttitor, posuere nibh vitae, condimentum libero. Vivamus ullamcorper scelerisque urna, eu mollis metus viverra quis. Nulla dignissim eget ipsum ut egestas. Nunc accumsan diam ac blandit aliquam. Nullam felis est, finibus sed nisi ut, feugiat eleifend lacus. Fusce accumsan aliquam dui, at congue nunc semper sit amet. Curabitur posuere lacus eu arcu aliquet, eu dignissim orci blandit. Vivamus finibus nibh mollis, ullamcorper velit posuere, varius dui. Vivamus ut tellus arcu.
-
-					Phasellus a libero dictum, fermentum elit quis, iaculis dui. Sed eget eleifend metus, vel pellentesque diam. Pellentesque ut lorem eu massa tempor malesuada. Donec vitae metus at nisl semper interdum a a nisl. Aliquam quis felis at arcu placerat congue a dictum arcu. In nibh elit, feugiat eu risus id, vehicula venenatis leo. Fusce pellentesque, neque ut sodales rhoncus, dui ante ultricies nunc, at blandit felis magna a urna. Integer feugiat leo ac bibendum iaculis.
-
-					Nullam lectus mauris, lacinia vel mi quis, laoreet mollis ex. Ut bibendum mi sit amet erat rutrum, vitae suscipit turpis pharetra. Ut vestibulum sagittis odio, quis eleifend turpis scelerisque ac. Praesent dignissim arcu nec urna imperdiet tempor. Aenean vestibulum justo quis scelerisque porta. Ut efficitur ligula nibh, a consequat risus aliquam eget. Praesent pharetra nunc eu velit dapibus, non ornare orci egestas. Aliquam sed tempus metus, dapibus gravida est. Cras malesuada, odio non semper aliquam, mi felis suscipit lacus, non tincidunt tortor neque a metus. Maecenas condimentum faucibus neque at sodales. Cras vitae lobortis augue. Curabitur a enim ut nibh dictum porttitor.
-				</p>
-		  	</div>
-
-		  	<div class="col-md-2"></div>
-
-	  		<div class="well col-md-5">
-	  			<img src="resources/game.png">
-	  			<h3>Game Development</h3>
-	  			<p>
-		  			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pretium urna neque, a bibendum dui sagittis vehicula. Nam vitae neque tincidunt, rhoncus dui sed, imperdiet magna. Etiam eu turpis porttitor, posuere nibh vitae, condimentum libero. Vivamus ullamcorper scelerisque urna, eu mollis metus viverra quis. Nulla dignissim eget ipsum ut egestas. Nunc accumsan diam ac blandit aliquam. Nullam felis est, finibus sed nisi ut, feugiat eleifend lacus. Fusce accumsan aliquam dui, at congue nunc semper sit amet. Curabitur posuere lacus eu arcu aliquet, eu dignissim orci blandit. Vivamus finibus nibh mollis, ullamcorper velit posuere, varius dui. Vivamus ut tellus arcu.
-
-					Phasellus a libero dictum, fermentum elit quis, iaculis dui. Sed eget eleifend metus, vel pellentesque diam. Pellentesque ut lorem eu massa tempor malesuada. Donec vitae metus at nisl semper interdum a a nisl. Aliquam quis felis at arcu placerat congue a dictum arcu. In nibh elit, feugiat eu risus id, vehicula venenatis leo. Fusce pellentesque, neque ut sodales rhoncus, dui ante ultricies nunc, at blandit felis magna a urna. Integer feugiat leo ac bibendum iaculis.
-
-					Nullam lectus mauris, lacinia vel mi quis, laoreet mollis ex. Ut bibendum mi sit amet erat rutrum, vitae suscipit turpis pharetra. Ut vestibulum sagittis odio, quis eleifend turpis scelerisque ac. Praesent dignissim arcu nec urna imperdiet tempor. Aenean vestibulum justo quis scelerisque porta. Ut efficitur ligula nibh, a consequat risus aliquam eget. Praesent pharetra nunc eu velit dapibus, non ornare orci egestas. Aliquam sed tempus metus, dapibus gravida est. Cras malesuada, odio non semper aliquam, mi felis suscipit lacus, non tincidunt tortor neque a metus. Maecenas condimentum faucibus neque at sodales. Cras vitae lobortis augue. Curabitur a enim ut nibh dictum porttitor.
-				</p>
-	  		</div>
+    <!-- Display web talent-->
+  	<div class="container" id="talent-display">
+  		<div class="row">
+  			<div class="col-md-12">
+  				<img src="resources/mac.png" class="talent-type" id="web-dev-icon">
+  			</div>
   		</div>
   	</div>
+
+  	<!-- Display game dev talent-->
+  	<div class="container" id="talent-display">
+  		<div class="row">
+  			<div class="col-md-12">
+  				<img src="resources/game.png" class="talent-type" id="game-dev-icon">
+  			</div>
+  		</div>
+  	</div>
+
 
 
 
