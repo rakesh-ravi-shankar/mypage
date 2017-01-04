@@ -48,7 +48,7 @@ $(document).ready(function(){
 	}, 10000, function(){
 		$("#balloon").animate({
 			top: "5%",
-		}, 6000);
+		}, 8000);
 	});
 
 

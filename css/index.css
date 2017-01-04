@@ -44,4 +44,29 @@ body {
 	animation-iteration-count: infinite;
 }
 
+
+@keyframes balloonAnimation {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(10deg);
+	}
+	50% {
+		transform: rotate(0deg);
+	}
+	75% {
+		transform: rotate(-10deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+#balloon {
+	animation-name: balloonAnimation;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
 }
