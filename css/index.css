@@ -1,52 +1,47 @@
+html {
+	height: 100%;
+}
+
+
 body {
-	/*background-color: #382410;*/
-	background-image: url("../resources/background-brown.jpg");
-	font-family: "Helvetica Neue";
+	background-image: url("../resources/background.jpeg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100%;
+	font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
 }
 
-#hello-text {
-	color: white;
+
+.skill-title {
+	display: inline;
+	padding: 1em;
+	font-size: 3em;
+}
+
+.skill-container {
 	position: absolute;
-	margin: auto;
-    top: 0;
-    left:0;
-    right:0;
-    bottom:0;
-   	font-size: 4em;
-   	opacity: 0;
+	width: 100%;
+	top: 50%;
 }
 
-#talent-display {
-	margin-top: 20px;
-}
 
-h3, p {
-	text-align: center;
-}
-
-.talent-type{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 10em;
-	margin-bottom: 10em;
-	width: 7em;
-	height: 6.2em;
-	opacity: 0;
-	/*animation: talent-type-animation 3s 1s infinite linear alternate;*/
-}
-/*
-
-@keyframes talent-type-animation {
-	0%{
-		
+@keyframes textanim {
+	0% {
+		color: #26B251;
 	}
 	50% {
-		transform: scale(3);
-		
+		color: #B21614;
 	}
 	100% {
-		
+		color: #FFD8D8;
+	}
+}
 
-	}*/
+.glitchy-text {
+	animation-name: textanim;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
 }
