@@ -1,58 +1,172 @@
 $(document).ready(function(){
 	
-	$("#car").css({"left": $(window).width() * 0.9, "top": $(window).height() / 4});
-	$("#van").css({"left": $(window).width(), "top": $(window).height() / 4});
-	$("#suv").css({"left": $(window).width() * 0.85, "top": $(window).height() / 3.6});
 
-	$("#chopper").css({"left": $(window).width() * 0.5});
-	$("#chopper").animate({
-		top: $(window).height() / 8
-	}, 5000, function(){
-		$("#chopper").css({"transform": "rotate(20deg)"});
-
-		$("#van").animate({
-			left: $(window).width() * 0.9
-		}, 5000, function(){
-			$(this).css("opacity", 0);
-			$("#explosion").css({"width": "7em", "height": "7em", "left": $(window).width() * 0.9, "top": $(window).height() / 4});
-			$("#explosion").attr("src", "resources/explosion.gif");
-
-			$("#explosion").fadeOut("slow");
-		});
+	$('#intro').flexVerticalCenter();
 
 
-		$("#car").animate({
-			left: $(window).width() * 0.5
-		}, 9000);
+	$('.animated-text').textillate({
 
-		
-		$("#suv").animate({
-			left: $(window).width() * 0.5
-		}, 9000);
-	});
+	  loop: true,
 
-	$("#chopper").animate({
-		left: $(window).width() * 0.9
-	}, 10000, function(){
-		$("#chopper").css({"transform": "rotate(0deg)"});
-	});
+	  minDisplayTime: 2500,
 
+	  initialDelay: 500,
 
+	  autoStart: true,
 
-	$("#balloon").css({"left": $(window).width() * 0.9});
-	$("#balloon").animate({
-		top: $(window).height() * 0.7,
-	}, 6000);
-	$("#balloon").animate({
-		left: $(window).width() * 0.7
-	}, 10000, function(){
-		$("#balloon").animate({
-			top: "5%",
-		}, 8000);
+	  // in animation settings
+	  in: {
+	    effect: 'fadeIn',
+		delayScale: 1.5,
+		delay: 100,
+		sync: false,
+		shuffle: false,
+		reverse: false,
+
+	    callback: function () {}
+	  },
+
+	  // out animation settings.
+	  out: {
+	    effect: 'fadeOut',
+	    delayScale: 1.5,
+	    delay: 100,
+	    sync: false,
+	    shuffle: false,
+	    reverse: false,
+
+	    callback: function () {}
+	  },
+
+	  // callback that executes once textillate has finished
+	  callback: function () {},
+
+	  // set the type of token to animate (available types: 'char' and 'word')
+	  type: 'char'
 	});
 
 
+	var partJson = {
+		"particles": {
+	    "number": {
+	      "value": 80,
+	      "density": {
+	        "enable": true,
+	        "value_area": 800
+	      }
+	    },
+	    "color": {
+	      "value": "#242424"
+	    },
+	    "shape": {
+	      "type": "circle",
+	      "stroke": {
+	        "width": 0,
+	        "color": "#000000"
+	      },
+	      "polygon": {
+	        "nb_sides": 5
+	      },
+	      "image": {
+	        "src": "img/github.svg",
+	        "width": 100,
+	        "height": 100
+	      }
+	    },
+	    "opacity": {
+	      "value": 0.5,
+	      "random": false,
+	      "anim": {
+	        "enable": false,
+	        "speed": 1,
+	        "opacity_min": 0.1,
+	        "sync": false
+	      }
+	    },
+	    "size": {
+	      "value": 5,
+	      "random": true,
+	      "anim": {
+	        "enable": false,
+	        "speed": 40,
+	        "size_min": 0.1,
+	        "sync": false
+	      }
+	    },
+	    "line_linked": {
+	      "enable": true,
+	      "distance": 150,
+	      "color": "#ffffff",
+	      "opacity": 0.4,
+	      "width": 1
+	    },
+	    "move": {
+	      "enable": true,
+	      "speed": 6,
+	      "direction": "none",
+	      "random": false,
+	      "straight": false,
+	      "out_mode": "out",
+	      "attract": {
+	        "enable": false,
+	        "rotateX": 600,
+	        "rotateY": 1200
+	      }
+	    }
+	  },
+	  "interactivity": {
+	    "detect_on": "canvas",
+	    "events": {
+	      "onhover": {
+	        "enable": true,
+	        "mode": "repulse"
+	      },
+	      "onclick": {
+	        "enable": true,
+	        "mode": "push"
+	      },
+	      "resize": true
+	    },
+	    "modes": {
+	      "grab": {
+	        "distance": 400,
+	        "line_linked": {
+	          "opacity": 1
+	        }
+	      },
+	      "bubble": {
+	        "distance": 400,
+	        "size": 40,
+	        "duration": 2,
+	        "opacity": 8,
+	        "speed": 3
+	      },
+	      "repulse": {
+	        "distance": 200
+	      },
+	      "push": {
+	        "particles_nb": 4
+	      },
+	      "remove": {
+	        "particles_nb": 2
+	      }
+	    }
+	  },
+	  "retina_detect": true,
+	  "config_demo": {
+	    "hide_card": false,
+	    "background_color": "#b61924",
+	    "background_image": "",
+	    "background_position": "50% 50%",
+	    "background_repeat": "no-repeat",
+	    "background_size": "cover"
+  		}
+	};
+	var jsonUri = "data:text/plain;base64,"+window.btoa(JSON.stringify(partJson));
 
+	particlesJS.load('particle-background', jsonUri, function() {
+	  console.log('callback - particles.js config loaded');
+	});
 
 
 });

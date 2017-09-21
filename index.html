@@ -2,54 +2,87 @@
 <html>
   
   <head>
-    <title>My Portfolio</title>
-    <!-- Bootstrap core CSS -->
+    <title>My Portfolio</title>    
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <script src="js/typed.js"></script>
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+
+    <script defer src="js/jquery.flexverticalcenter.js"></script>
+    <script defer src="js/jquery.lettering.js"></script>
+    <script defer src="js/jquery.textillate.js"></script>
+    <script defer src="js/particles.min.js"></script>
+    <script defer src="js/index.js"></script>
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Finger+Paint" rel="stylesheet">
+
+
   </head>
 
 
   <body>
-  	<nav class="navbar navbar-inverse navbar-fixed-top" style="background: rgba(0,0,0,0);border:rgba(0,0,0,0);">
-        <div class="navbar-header" style="width: 100%;">
-          <a class="navbar-brand" href="#" style="font-size: 2em;"><b>Rakesh Ravi Shankar</b></a>
-          <a href="#" class="navbar-brand" style="float: right; font-size: 2em;"><b>About</b></a>
+
+    <div id="particle-background"></div>
+
+    <nav class="navbar navbar-inverse" style="border-color: transparent; background: rgba(255, 255, 255, 0);">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html"><b>Rakesh Ravi Shankar</b></a>
         </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="awards.html">Awards</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
     </nav>
 
-	<div style="position: absolute; top: 50%; width: 100%">
-    	<img src="resources/prisma.jpeg" style="display: block; margin-left: auto; margin-right: auto; width: 15em; height: 15em;">
-	</div>
+    <div class="container" id="intro">
 
-    <div class="skill-container">
+      <div class="row">
+        <center>
+          <h1 id="template">I am a/an...</h1>
+          <h2 class="animated-text">
+            <ul class="texts"> 
+              <li> developer</li>
+              <li> innovator</li>
+              <li> engineer</li>
+              <li> hackathon veteran</li>
+            </ul>
+          </h2>
+        </center>
+      </div>
 
-    		<a href="#"><h2 class="skill-title" style="float: left;">
-    			<img src="resources/animated-light-bulb-image-3.gif" style="top: -=3em;">
-    			<b>Web Developer</b>
-    		</h2></a>
+      <div class="row">
+        <center>
+          <h4 id="tagline">
+            <a href="https://www.paypal.com/us/home">PayPal</a> Intern, <a href="http://www.northeastern.edu/" id="neu-link">Northeastern</a> Grad Student
+          </h4>
+        </center>
+      </div>
 
-    		<h2 class="skill-title" style="float: right;">
-    			<b>Game <span class="glitchy-text">Dev</span>eloper</b>
-    		</h2>		
     </div>
 
 
-    <img src="resources/vehicles/chopper.png" id="chopper" style="width: 5em; height: 5em; position: absolute;">
-    <img src="resources/vehicles/hot-air-balloon.png" id="balloon" style="width: 5em; height: 5em; position: absolute; top: 100%">
+    <footer>
+      <a href="https://www.linkedin.com/in/rakesh-ravi-shankar/"><i class="fa fa-2x fa-linkedin"></i></a>
+      <a href="https://github.com/rakeshr4"><i class="fa fa-2x fa-github"></i></a>
+    </footer>
 
-    <img src="resources/vehicles/car-1.png" id="car" style="width: 5em; height: 5em; position: absolute;">
-    <img src="resources/vehicles/suv.png" id="suv" style="width: 5em; height: 5em; position: absolute;">
-    <img src="resources/vehicles/van.png" id="van" style="width: 5em; height: 5em; position: absolute;">
-    <img id="explosion" style="position: absolute;">
-
-
-
-	<!-- Bootstrap core JavaScript -->	
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     
 
   </body>
