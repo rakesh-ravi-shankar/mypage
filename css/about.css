@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav.navbar-nav li a {
+     color: #fff !important; 
+ }
+ .nav.navbar-nav li a:hover { 
+     color: #DBDBDB !important;
+ }
+
+ .navbar-header a {
+     color: #fff !important; 
+ }
+ .navbar-header a:hover { 
+     color: #DBDBDB !important;
+ }
+
+ #mypic {
+  height: 35%;
+  width: 35%;
+ }
+
+.well {
+  color: #4F4F4F;
+  margin-top: 2em;
+  text-align: left;
+  font-family: 'Finger Paint', cursive;
+  word-spacing: 0.5em;
+ }
+
+body {
+  font: normal 16px/1.5 "Helvetica Neue", sans-serif;
+  background: #3E8281;
+  color: #fff;
+  overflow-x: hidden;
+  padding-bottom: 50px;
+}  
+
+footer {
+  text-align: center;
+}
+
+
+/* INTRO SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.intro {
+  background: #F45B69;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+
