@@ -25,6 +25,10 @@
   width: 5em;
  }
 
+.awardee {
+  color: #524A4A;
+}
+
 body {
   font: normal 16px/1.5 "Helvetica Neue", sans-serif;
   background: #3D5D7F;
