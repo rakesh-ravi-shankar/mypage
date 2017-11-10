@@ -45,8 +45,7 @@ $(document).ready(function(){
 	  type: 'char'
 	});
 
-
-	var partJson = {
+	particlesJS('particle-background', {
 		"particles": {
 	    "number": {
 	      "value": 80,
@@ -161,11 +160,6 @@ $(document).ready(function(){
 	    "background_repeat": "no-repeat",
 	    "background_size": "cover"
   		}
-	};
-	var jsonUri = "data:text/plain;base64,"+window.btoa(JSON.stringify(partJson));
-
-	particlesJS.load('particle-background', jsonUri, function() {
-	  console.log('callback - particles.js config loaded');
 	});
 
 
